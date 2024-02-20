@@ -4,14 +4,14 @@ function App (){
     const [name, setName] = useState ("გამარჯობა")
 
     useEffect(function(){
-        window.alert("იტვირთება")
+        window.alert("გვერდი ჩაიტვირთა ")
     }, [name]);
     return(
         <Fragment>
             <h1>
                 {name}
             </h1>
-            <button type="button" onClick={()=> setName("მოხდა ცვლილება")}>დააკლიკეთ</button>
+            <button type="button" onClick={()=> setName("გვერდზე დაფიქსირდა განახლება")}>დააკლიკეთ</button>
 
         </Fragment>
 
